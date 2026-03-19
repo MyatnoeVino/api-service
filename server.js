@@ -10,6 +10,10 @@ app.get("/api/info", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("API töötab 🚀");
+});
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log("Server töötab!");
 });
