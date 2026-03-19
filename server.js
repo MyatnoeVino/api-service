@@ -11,7 +11,10 @@ app.get("/api/info", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("API töötab 🚀");
+  res.send(`
+    <h1>API töötab 🚀</h1>
+    <p>meeskond: ${TEAM_NAME}</p>
+  `);
 });
 
 app.listen(PORT, "0.0.0.0", () => {
